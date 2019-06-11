@@ -1,13 +1,16 @@
+// Three.js - Load .OBJ and .MTL file
+// from https://threejsfundamentals.org/threejs/threejs-load-obj-materials.html
+
   'use strict';
 
-
+/* global THREE */
 
 function main() {
   const canvas = document.querySelector('#c');
   const renderer = new THREE.WebGLRenderer({canvas, alpha: true});
-
+  
   const fov = 45;
-  const aspect = 2;  
+  const aspect = 2;  // the canvas default
   const near = 0.1;
   const far = 1000;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
@@ -20,15 +23,16 @@ function main() {
   controls.maxDistance = 250;
   controls.update();
   
-
+  
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x000000, 0);
+  
+ 
 
   
 
   {
-    const skyColor = 0xB1E1FF; 
-    const groundColor = 0xB97A20; 
+    const skyColor = 0xB1E1FF;  // light blue
+    const groundColor = 0xB97A20;  // brownish orange
     const intensity = 1;
     const light = new THREE.HemisphereLight(skyColor, groundColor, intensity);
     scene.add(light);
@@ -74,6 +78,8 @@ function main() {
     }
 
     renderer.render(scene, camera);
+    renderer.setClearColor(0x000000, 0);
+    
     scene.rotation.y += 0.003;
 
     requestAnimationFrame(render);
