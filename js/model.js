@@ -4,7 +4,7 @@
 
 function main() {
   const canvas = document.querySelector('#c');
-  const renderer = new THREE.WebGLRenderer({canvas});
+  const renderer = new THREE.WebGLRenderer({canvas, alpha: true});
 
   const fov = 45;
   const aspect = 2;  
@@ -22,7 +22,7 @@ function main() {
   
 
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color('#3DB6CC');
+  scene.background = new THREE.Color(0x000000, 0);
 
   
 
