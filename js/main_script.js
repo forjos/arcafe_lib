@@ -42,4 +42,8 @@ $(".btn_add_amount").click(function(){
 $('.btn_app_replay').click(function(event){
     $('.dish_scrin_btn').fadeIn('fast');
     $('.open_cart_btn').fadeOut('fast');
+    $(".value").html("0");
+    $(".price").html("0 ₽");
+    $(".plus").addClass("plus_active");
+    $('.btn_add_amount').removeClass('add_amount_active');
 });
