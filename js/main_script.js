@@ -38,3 +38,7 @@ $(".btn_add_amount").click(function(){
    }
   else{}
 });
+
+$('.btn_app_replay').click(function(event){
+    $('.dish_scrin_btn').fadeIn('fast');
+});
