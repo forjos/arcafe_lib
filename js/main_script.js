@@ -9,6 +9,7 @@ var swiper = new Swiper('.swiper-container', {
       },
         noSwiping: true,
         noSwipingClass: 'swiper-slide',
+        loop: true
 
     });
 
