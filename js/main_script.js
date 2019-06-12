@@ -41,4 +41,5 @@ $(".btn_add_amount").click(function(){
 
 $('.btn_app_replay').click(function(event){
     $('.dish_scrin_btn').fadeIn('fast');
+    $('.open_cart_btn').fadeOut('fast');
 });
