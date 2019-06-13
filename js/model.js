@@ -21,6 +21,8 @@ function main() {
   controls.target.set(0, 2, 0);
   controls.minDistance = 10;
   controls.maxDistance = 250;
+  controls.minPolarAngle = - 5;
+  controls.maxPolarAngle = 1.5;
   controls.update();
   
   
