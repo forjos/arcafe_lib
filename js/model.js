@@ -51,9 +51,9 @@ function main() {
 
   {
     const objLoader = new THREE.OBJLoader2();
-    objLoader.loadMtl('https://forjos.github.io/arcafe_lib/model/16.mtl', null, (materials) => {
+    objLoader.loadMtl('https://forjos.github.io/arcafe_lib/model/dish/dish.mtl', null, (materials) => {
       objLoader.setMaterials(materials);
-      objLoader.load('https://forjos.github.io/arcafe_lib/model/16.obj', (event) => {
+      objLoader.load('https://forjos.github.io/arcafe_lib/model/dish/dish.obj', (event) => {
         const root = event.detail.loaderRootNode;
         scene.add(root);
       });
