@@ -54,6 +54,7 @@ $( '<div class="hamburger_box"><div class="line-hamburger-box"><div class="line-
 $('.line-hamburger-box').click(function(event){
     $(this).toggleClass('activ_menu');
     $('nav.t199__menu').toggleClass('activ_menu');
+    $('body').toggleClass('b_hidden');
 });
 
 
