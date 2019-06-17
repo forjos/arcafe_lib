@@ -64,7 +64,7 @@ $('.dish_scrin_btn').click(function(event){
 
 
 // click for change value amount
-$(".plus").click(function() {
+$(".plus_prev_app").click(function() {
   $(".value_prev_app").html("1");
   $(".price_prev_app").html("750 ₽");
   $(".plus_prev_app").removeClass("plus_active_prev_app");
