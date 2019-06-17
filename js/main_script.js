@@ -57,6 +57,38 @@ var swiper = new Swiper('.smartphone', {
     });
 
 
-      
+    // click for add cart
+$('.dish_scrin_btn').click(function(event){
+   $('.popup_dark_prev_app').fadeIn('fast');
+   $('.popup_addcart_prev_app').css("height", "200");
+});
+
+
+// click for change value amount
+$(".plus_prev_app").click(function() {
+  $(".value_prev_app").html("1");
+  $(".price_prev_app").html("750 ₽");
+  $(".plus_prev_app").removeClass("plus_active_prev_app");
+  $('.btn_add_amount').addClass('add_amount_active');
+});
+
+$(".btn_add_amount").click(function(){
+  if($('.btn_add_amount').hasClass('add_amount_active')){
+      $('.popup_dark_prev_app').fadeOut('fast');
+      $('.popup_addcart_prev_app').css("height", "0");
+      $('.dish_scrin_btn').fadeOut('fast');
+      $('.open_cart_btn_prev_app').fadeIn('fast');
+   }
+  else{}
+});
+
+$('.btn_app_replay').click(function(event){
+    $('.dish_scrin_btn').fadeIn('fast');
+    $('.open_cart_btn_prev_app').fadeOut('fast');
+    $(".value_prev_app").html("0");
+    $(".price_prev_app").html("0 ₽");
+    $(".plus_prev_app").addClass("plus_active_prev_app");
+    $('.btn_add_amount').removeClass('add_amount_active');
+});  
       
 });
