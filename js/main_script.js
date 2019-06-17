@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+/*
 var swiper = new Swiper('.swiper-container', {
       navigation: {
         nextEl: '.swiper-button-next',
@@ -14,7 +14,7 @@ var swiper = new Swiper('.swiper-container', {
         loop: true
 
     });
-
+*/
 
 // click for add cart
 $('.dish_scrin_btn').click(function(event){
