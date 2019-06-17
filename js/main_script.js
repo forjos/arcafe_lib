@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 var swiper = new Swiper('.swiper-container', {
       navigation: {
         nextEl: '.swiper-button-next',
@@ -82,3 +84,4 @@ $(window).scroll(function(event){
  });
 });
 /* fixed меню end */
+});
