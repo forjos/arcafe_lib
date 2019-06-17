@@ -58,7 +58,7 @@ var swiper = new Swiper('.smartphone', {
 
 // click for add cart
 $('.dish_scrin_btn').click(function(event){
-   $('.popup_dark').fadeIn('fast');
+   $('.popup_dark_prev_app').fadeIn('fast');
    $('.popup_addcart').css("height", "200");
 });
 
@@ -73,7 +73,7 @@ $(".plus").click(function() {
 
 $(".btn_add_amount").click(function(){
   if($('.btn_add_amount').hasClass('add_amount_active')){
-      $('.popup_dark').fadeOut('fast');
+      $('.popup_dark_prev_app').fadeOut('fast');
       $('.popup_addcart').css("height", "0");
       $('.dish_scrin_btn').fadeOut('fast');
       $('.open_cart_btn').fadeIn('fast');
