@@ -41,7 +41,7 @@ $(window).scroll(function(event){
       
       
       
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.smartphone', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
