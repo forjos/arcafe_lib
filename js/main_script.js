@@ -83,4 +83,34 @@ $(window).scroll(function(event){
  });
 });
 /* fixed меню end */
+      
+      
+/* 3d/ar tab */
+$(document).ready(function() {
+$( '<div class="way_line_slider_tab"</div>' ).appendTo( '.slider_tab_box' );
+$( '<div class="line_slider_tab"</div>' ).appendTo( '.slider_tab_box' );
+var width_start = $('.active_sl_tab').width();
+$( '.line_slider_tab' ).width(width_start);
 });
+
+$(document).ready(function() {
+$(function() {
+	$('.slider_tab_box').on('click', '.slider_tab:not(.active_sl_tab)', function() {
+		$(this)
+			.addClass('active_sl_tab').siblings().removeClass('active_sl_tab')
+			.closest('.section_slider_home').find('.tabs_content').fadeOut('fast').eq($(this).index()).fadeIn(500)
+			.closest('#rec106935840').find('.t396__elem img').fadeOut().eq($(this).index()).fadeIn();
+		$(this).closest('#rec106999988').find('.tn-atom__img').css({"opacity" : "0", "height" : "0"}).eq($(this).index()).css({"opacity" : "1", "height" : "auto"});
+		$(this).closest('#rec106999988').find('.tn-atom__pin').css("opacity", 0).eq($(this).index()).css("opacity", 1);
+		
+		var position_activ = $(this).position();
+        var width_activ = $(this).width();
+        $( '.line_slider_tab' ).animate({left: position_activ.left, width: width_activ});
+		
+	});
+});
+});
+/* 3d/ar tab end */
+      
+});
+
