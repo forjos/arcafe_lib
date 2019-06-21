@@ -83,8 +83,11 @@ $(window).scroll(function(event){
  });
 });
 /* fixed меню end */
-      
-      
+        
+});
+
+
+
 /* 3d/ar tab */
 $(document).ready(function() {
 $( '<div class="way_line_slider_tab"</div>' ).appendTo( '.slider_tab_box' );
@@ -111,6 +114,4 @@ $(function() {
 });
 });
 /* 3d/ar tab end */
-      
-});
 
