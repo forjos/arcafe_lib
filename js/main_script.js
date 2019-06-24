@@ -35,7 +35,7 @@ $(".btn_add_amount").click(function(){
       $('.popup_dark').fadeOut('fast');
       $('.popup_addcart').css("height", "0");
       $('.dish_scrin_btn').fadeOut('fast');
-      $('.open_cart_btn').fadeIn('fast');
+      $('.open_cart_btn').css("display", "flex").hide().fadeIn();
    }
   else{}
 });
