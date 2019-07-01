@@ -19,8 +19,8 @@ function main() {
   const controls = new THREE.OrbitControls(camera, canvas);
   controls.autoRotate = true;
   controls.target.set(0, 2, 0);
-  controls.minDistance = 30;
-  controls.maxDistance = 30;
+  controls.minDistance = 10;
+  controls.maxDistance = 250;
   controls.minPolarAngle = - 5; // radians
   controls.maxPolarAngle = 1.5; // radians
   //controls.minAzimuthAngle = - 2; // radians
