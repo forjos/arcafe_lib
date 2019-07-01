@@ -53,9 +53,9 @@ function main() {
 
   {
     const objLoader = new THREE.OBJLoader2();
-    objLoader.loadMtl('https://forjos.github.io/arcafe_lib/model/16.mtl', null, (materials) => {
+    objLoader.loadMtl('http://testshop12.beget.tech/model/pancakeopt2.mtl', null, (materials) => {
       objLoader.setMaterials(materials);
-      objLoader.load('https://forjos.github.io/arcafe_lib/model/16.obj', (event) => {
+      objLoader.load('http://testshop12.beget.tech/model/pancakeopt2.obj', (event) => {
         const root = event.detail.loaderRootNode;
         scene.add(root);
       });
