@@ -14,15 +14,17 @@ function main() {
   const near = 0.1;
   const far = 1000;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(10, 10, 20);
+  camera.position.set(15, 10, 10);
 
   const controls = new THREE.OrbitControls(camera, canvas);
   controls.autoRotate = true;
-  controls.target.set(0, 0, 0);
-  controls.minDistance = 10;
-  controls.maxDistance = 250;
-  controls.minPolarAngle = - 5;
-  controls.maxPolarAngle = 1.5;
+  controls.target.set(0, 2, 0);
+  controls.minDistance = 30;
+  controls.maxDistance = 30;
+  controls.minPolarAngle = - 5; // radians
+  controls.maxPolarAngle = 1.5; // radians
+  //controls.minAzimuthAngle = - 2; // radians
+  //controls.maxAzimuthAngle = 2; // radians
   controls.update();
   
   
@@ -51,9 +53,9 @@ function main() {
 
   {
     const objLoader = new THREE.OBJLoader2();
-    objLoader.loadMtl('https://forjos.github.io/arcafe_lib/model/dish/dish.mtl', null, (materials) => {
+    objLoader.loadMtl('https://forjos.github.io/arcafe_lib/model/21.mtl', null, (materials) => {
       objLoader.setMaterials(materials);
-      objLoader.load('https://forjos.github.io/arcafe_lib/model/dish/dish.obj', (event) => {
+      objLoader.load('https://forjos.github.io/arcafe_lib/model/21.obj', (event) => {
         const root = event.detail.loaderRootNode;
         scene.add(root);
       });
