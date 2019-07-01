@@ -53,9 +53,9 @@ function main() {
 
   {
     const objLoader = new THREE.OBJLoader2();
-    objLoader.loadMtl('https://forjos.github.io/arcafe_lib/model/pancake3.mtl', null, (materials) => {
+    objLoader.loadMtl('https://forjos.github.io/arcafe_lib/model/chiken.mtl', null, (materials) => {
       objLoader.setMaterials(materials);
-      objLoader.load('https://forjos.github.io/arcafe_lib/model/pancake3.obj', (event) => {
+      objLoader.load('https://forjos.github.io/arcafe_lib/model/chiken.obj', (event) => {
         const root = event.detail.loaderRootNode;
         scene.add(root);
       });
