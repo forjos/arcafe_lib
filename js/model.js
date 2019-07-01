@@ -21,8 +21,8 @@ function main() {
   controls.target.set(0, 2, 0);
   controls.minDistance = 10;
   controls.maxDistance = 250;
-  controls.minPolarAngle = - 5; // radians
-  controls.maxPolarAngle = 1.5; // radians
+  controls.minPolarAngle = - 3; // radians
+  controls.maxPolarAngle = 1.2; // radians
   //controls.minAzimuthAngle = - 2; // radians
   //controls.maxAzimuthAngle = 2; // radians
   controls.update();
@@ -45,7 +45,7 @@ function main() {
   {
     const color = 0xFFFFFF;
     const intensity = 1;
-    const light = new THREE.DirectionalLight(color, intensity);
+    const light = new THREE.DirectionalLight(color, 2);
     light.position.set(5, 1, 2);
     scene.add(light);
     scene.add(light.target);
