@@ -1,0 +1,68 @@
+# Blender MTL File: 'None'
+# Material Count: 6
+
+newmtl chicken
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.429804 0.156863 0.156863
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump -bm 0.350042 C:\\Users\\Okushock\\Downloads\\2418192.5cb39c2589257\\chicken lolipop\\01a bu.jpg
+map_Kd C:\\Users\\Okushock\\Downloads\\2418192.5cb39c2589257\\chicken lolipop\\01a.jpg
+
+newmtl coriander
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.160000 0.442353 0.141176
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Okushock\\Downloads\\2418192.5cb39c2589257\\chicken lolipop\\coriander.jpg
+
+newmtl coriander1
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.160000 0.442353 0.141176
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Okushock\\Downloads\\2418192.5cb39c2589257\\chicken lolipop\\coriander.jpg
+
+newmtl lemon
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.153726 0.247843 0.436078
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Okushock\\Downloads\\2418192.5cb39c2589257\\chicken lolipop\\50364138-yellow-lemon-peel-texture-macro.jpg
+
+newmtl lemon2
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.492549 0.341961 0.608628
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\\Users\\Okushock\\Downloads\\2418192.5cb39c2589257\\chicken lolipop\\Lemon-Slice-126780.jpg
+
+newmtl plate
+Ns 94.117647
+Ka 1.000000 1.000000 1.000000
+Kd 0.693333 0.693333 0.693333
+Ks 0.152941 0.152941 0.152941
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
