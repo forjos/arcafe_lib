@@ -56,9 +56,9 @@ function main() {
 
   {
     const objLoader = new THREE.OBJLoader2();
-    objLoader.loadMtl('http://testshop12.beget.tech/model/pizza3.mtl', null, (materials) => {
+    objLoader.loadMtl('https://forjos.github.io/arcafe_lib/pizza3.mtl', null, (materials) => {
       objLoader.setMaterials(materials);
-      objLoader.load('http://testshop12.beget.tech/model/pizza3.obj', (event) => {
+      objLoader.load('https://forjos.github.io/arcafe_lib/pizza3.obj', (event) => {
         const root = event.detail.loaderRootNode;
         scene.add(root);
       });
