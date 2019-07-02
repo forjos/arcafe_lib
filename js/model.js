@@ -14,7 +14,7 @@ function main() {
   const near = 0.1;
   const far = 1000;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(15, 10, 10);
+  camera.position.set(20, 15, 20);
 
   const controls = new THREE.OrbitControls(camera, canvas);
   controls.autoRotate = true;
@@ -23,6 +23,9 @@ function main() {
   controls.maxDistance = 250;
   controls.minPolarAngle = - 3; // radians
   controls.maxPolarAngle = 1.2; // radians
+  controls.enablePan = false;
+  controls.enableZoom = false;
+
   //controls.minAzimuthAngle = - 2; // radians
   //controls.maxAzimuthAngle = 2; // radians
   controls.update();
@@ -45,17 +48,17 @@ function main() {
   {
     const color = 0xFFFFFF;
     const intensity = 1;
-    const light = new THREE.DirectionalLight(color, 2);
-    light.position.set(5, 1, 2);
+    const light = new THREE.DirectionalLight(color, 1.2);
+    light.position.set(5, 8, 7);
     scene.add(light);
     scene.add(light.target);
   }
 
   {
     const objLoader = new THREE.OBJLoader2();
-    objLoader.loadMtl('https://forjos.github.io/arcafe_lib/model/untitled.mtl', null, (materials) => {
+    objLoader.loadMtl('http://testshop12.beget.tech/model/pizza3.mtl', null, (materials) => {
       objLoader.setMaterials(materials);
-      objLoader.load('https://forjos.github.io/arcafe_lib/model/untitled.obj', (event) => {
+      objLoader.load('http://testshop12.beget.tech/model/pizza3.obj', (event) => {
         const root = event.detail.loaderRootNode;
         scene.add(root);
       });
@@ -84,7 +87,7 @@ function main() {
     renderer.render(scene, camera);
     renderer.setClearColor(0x000000, 0);
     
-    scene.rotation.y += 0.003;
+    scene.rotation.y += 0.0015;
 
     requestAnimationFrame(render);
   }
