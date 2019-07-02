@@ -10,7 +10,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 1
-map_Kd uvw_pizza_texture_refl1.jpg
+map_Kd pizza-textura/uvw_pizza_texture_refl1.jpg
 
 newmtl wire_196088225.000
 Ns 29.411765
@@ -21,4 +21,4 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd wood-081_arariba-1-light_d1.jpg
+map_Kd pizza-textura/wood-081_arariba-1-light_d1.jpg
