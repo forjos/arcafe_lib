@@ -194,3 +194,14 @@ function cake_model() {
 
 
 cake_model();
+
+
+$(document).ready(function() {
+    $('.close_box_model').click(function(event){
+	$('.box_model').fadeOut('');
+});
+
+$('.btn_box_model').click(function(event){
+	$('.box_model').fadeIn('');
+});
+});
