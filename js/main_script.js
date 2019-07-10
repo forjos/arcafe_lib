@@ -102,7 +102,7 @@ $(function() {
 		$(this)
 			.addClass('active_sl_tab').siblings().removeClass('active_sl_tab')
 			.closest('.section_slider_home').find('.tabs_content').fadeOut('fast').eq($(this).index()).fadeIn(500)
-			.closest('#rec106935840').find('.t396__elem img').fadeOut().eq($(this).index()).fadeIn();
+			.closest('#rec115247548, #rec106935840').find('.t396__elem img').fadeOut().eq($(this).index()).fadeIn();
 		$(this).closest('#rec115247548, #rec113765040').find('.tn-atom__img').css({"opacity" : "0", "height" : "0"}).eq($(this).index()).css({"opacity" : "1", "height" : "auto"});
 		$(this).closest('#rec115247548, #rec113765040').find('.tn-atom__pin').css("opacity", 0).eq($(this).index()).css("opacity", 1);
 		
