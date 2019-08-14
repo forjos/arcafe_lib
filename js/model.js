@@ -14,7 +14,7 @@ function main() {
   const near = 0.1;
   const far = 1000;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(20, 18, 20);
+  camera.position.set(20, 15, 20);
 
   const controls = new THREE.OrbitControls(camera, canvas);
   controls.autoRotate = true;
@@ -110,7 +110,7 @@ function cake_model() {
   const near = 0.1;
   const far = 1000;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(20, 15, 20);
+  camera.position.set(20, 18, 20);
 
   const controls = new THREE.OrbitControls(camera, canvas);
   controls.autoRotate = true;
