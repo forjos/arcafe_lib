@@ -6,7 +6,7 @@
 /* global THREE */
 
 function main() {
-  const canvas = document.querySelector('#c');
+  const canvas = document.querySelector('#c2');
   const renderer = new THREE.WebGLRenderer({canvas, antialias: true, alpha: true});
   
   const fov = 45;
