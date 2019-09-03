@@ -14,7 +14,7 @@ function main() {
   const near = 0.1;
   const far = 1000;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(20, 15, 20);
+  camera.position.set(15, 18, 0);
 
   const controls = new THREE.OrbitControls(camera, canvas);
   controls.autoRotate = true;
@@ -41,7 +41,7 @@ controls.maxPolarAngle = Math.PI/2.3; // radians
   {
     const skyColor = 0xB1E1FF;  // light blue
     const groundColor = 0xB97A20;  // brownish orange
-    const intensity = .5;
+    const intensity = .8;
     const light = new THREE.HemisphereLight(skyColor, groundColor, intensity);
     scene.add(light);
   }
