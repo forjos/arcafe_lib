@@ -2,7 +2,7 @@ $(document).ready(function() {
       
 var swiper = new Swiper('.swiper-container-app', {
       navigation: {
-        nextEl: '.swiper-button-next',
+        nextEl: '.swiper-button-next_app',
         prevEl: '.swiper-button-prev',
       },
        pagination: {
