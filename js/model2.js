@@ -41,7 +41,7 @@ controls.maxPolarAngle = Math.PI/2.3; // radians
   {
     const skyColor = 0xB1E1FF;  // light blue
     const groundColor = 0xB97A20;  // brownish orange
-    const intensity = 1;
+    const intensity = .5;
     const light = new THREE.HemisphereLight(skyColor, groundColor, intensity);
     scene.add(light);
   }
@@ -50,7 +50,7 @@ controls.maxPolarAngle = Math.PI/2.3; // radians
     const color = 0xFFFFFF;
     const intensity = 1;
     const light = new THREE.DirectionalLight(color, 1.2);
-    light.position.set(5, 8, 7);
+    light.position.set(5, 20, 0);
     scene.add(light);
     scene.add(light.target);
   }
