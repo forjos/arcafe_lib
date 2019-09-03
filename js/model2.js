@@ -22,8 +22,8 @@ function main() {
   controls.minDistance = 10;
   controls.maxDistance = 250;
   controls.minPolarAngle = - 3; // radians
-  controls.minPolarAngle = Math.PI/2.3;
-controls.maxPolarAngle = Math.PI/2.3; // radians
+  controls.minPolarAngle = Math.PI/2.4;
+controls.maxPolarAngle = Math.PI/2.4; // radians
   controls.enablePan = false;
   controls.enableZoom = false;
 
