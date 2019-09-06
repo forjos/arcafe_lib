@@ -25,7 +25,7 @@ $('.dish_scrin_btn').click(function(event){
 // click for change value amount
 $(".plus").click(function() {
   $(".value").html("1");
-  $(".price").html("750 ₽");
+  $(".price").html("450 ₽");
   $(".plus").removeClass("plus_active");
   $('.btn_add_amount').addClass('add_amount_active');
 });
