@@ -42,7 +42,8 @@ $(".btn_add_amount").click(function(){
 });
 
 $('.btn_app_replay').click(function(event){
-    $('.dish_scrin_btn').fadeIn('fast');
+    //$('.dish_scrin_btn').fadeIn('fast');
+    $('.dish_scrin_btn').addClass('dish_scrin_btn_vsbl');
     $('.open_cart_btn').fadeOut('fast');
     $(".value").html("0");
     $(".price").html("0 ₽");
