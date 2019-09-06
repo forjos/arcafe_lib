@@ -137,7 +137,7 @@ $('#c2').click(function(event){
     $('.swiper-container-app.smartphone .btn_app_prev_next.dish_scrin_btn').addClass('dish_scrin_btn_vsbl');
 });
 $('.swiper-button-next_app.btn_app_replay').click(function(event){
-    $('.swip_dish_prev').fadeIn('fast');
+    $('.swip_dish_prev, .dish_scrin_btn').fadeIn('fast');
     $('.swiper-container-app.smartphone .btn_app_prev_next.dish_scrin_btn').fadeOut('fast');
 });
 
