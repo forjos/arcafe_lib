@@ -139,7 +139,8 @@ $('#c2').click(function(event){
 });
 $('.swiper-button-next_app.btn_app_replay').click(function(event){
     $('.swip_dish_prev').fadeIn('fast');
-    $('.swiper-container-app.smartphone .btn_app_prev_next.dish_scrin_btn').fadeOut('fast');
+    //$('.swiper-container-app.smartphone .btn_app_prev_next.dish_scrin_btn').fadeOut('fast');
+	$('.swiper-container-app.smartphone .btn_app_prev_next.dish_scrin_btn').removeClass('dish_scrin_btn_vsbl');
 });
 
 //
