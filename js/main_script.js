@@ -34,7 +34,8 @@ $(".btn_add_amount").click(function(){
   if($('.btn_add_amount').hasClass('add_amount_active')){
       $('.popup_dark').fadeOut('fast');
       $('.popup_addcart').css("height", "0");
-      $('.dish_scrin_btn').fadeOut('fast');
+      //$('.dish_scrin_btn').fadeOut('fast');
+      $('.dish_scrin_btn').removeClass('dish_scrin_btn_vsbl');
       $('.open_cart_btn').css("display", "flex").hide().fadeIn();
    }
   else{}
@@ -137,7 +138,7 @@ $('#c2').click(function(event){
     $('.swiper-container-app.smartphone .btn_app_prev_next.dish_scrin_btn').addClass('dish_scrin_btn_vsbl');
 });
 $('.swiper-button-next_app.btn_app_replay').click(function(event){
-    $('.swip_dish_prev, .dish_scrin_btn').fadeIn('fast');
+    $('.swip_dish_prev').fadeIn('fast');
     $('.swiper-container-app.smartphone .btn_app_prev_next.dish_scrin_btn').fadeOut('fast');
 });
 
