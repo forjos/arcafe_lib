@@ -116,3 +116,41 @@ $(function() {
 });
 /* 3d/ar tab end */
 
+$(document).ready(function() {
+      
+var swiper = new Swiper('.swiper-container-app', {
+      navigation: {
+        nextEl: '.swiper-button-next_app',
+        prevEl: '.swiper-button-prev',
+      },
+       pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+        noSwiping: true,
+        noSwipingClass: 'swiper-slide',
+        loop: true
+
+    });
+$('#c2').click(function(event){
+    $('.swip_dish_prev').fadeOut('fast');
+    $('.swiper-container-app.smartphone .btn_app_prev_next.dish_scrin_btn').addClass('dish_scrin_btn_vsbl');
+});
+$('.swiper-button-next_app.btn_app_replay').click(function(event){
+    $('.swip_dish_prev').fadeIn('fast');
+    $('.swiper-container-app.smartphone .btn_app_prev_next.dish_scrin_btn').fadeOut('fast');
+});
+
+//
+$('#c2').each(function(){
+    var mc = new Hammer(this);
+    mc.on("swiperight swipeleft", function() {
+        $('.swip_dish_prev').fadeOut('fast');
+        $('.swiper-container-app.smartphone .btn_app_prev_next.dish_scrin_btn').addClass('dish_scrin_btn_vsbl');
+        return false;
+    });
+});
+//
+
+});
+
