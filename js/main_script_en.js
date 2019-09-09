@@ -53,7 +53,7 @@ $('.btn_app_replay').click(function(event){
 
 
 /* menu */
-$( '<div class="hamburger_box"><div class="line-hamburger-box"><div class="line-hamburger1"></div><div class="line-hamburger2"></div><div class="line-hamburger3"></div><p class="close-text">закрыть</p></div></div>' ).appendTo( '.t199__mmenu' );
+$( '<div class="hamburger_box"><div class="line-hamburger-box"><div class="line-hamburger1"></div><div class="line-hamburger2"></div><div class="line-hamburger3"></div><p class="close-text">close</p></div></div>' ).appendTo( '.t199__mmenu' );
 $('.line-hamburger-box').click(function(event){
     $(this).toggleClass('activ_menu');
     $('nav.t199__menu').toggleClass('activ_menu');
